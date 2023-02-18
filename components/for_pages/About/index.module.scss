@@ -5,6 +5,21 @@
     padding-bottom: 100px;
     display: flex;
     justify-content: space-between;
+
+    @include mq($DesktopWidth, max) {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    @include mq($TabletWidth, max) {
+        padding-top: 20px;
+        padding-bottom: 86px;
+    }
+
+    @include mq($PhoneWidth, max) {
+        align-items: baseline;
+    }
 }
 
 .hand {
@@ -19,20 +34,33 @@
     line-height: 165.52%;
     font-family: 'Montserrat';
     white-space: nowrap;
+
+    @include mq($PhoneWidth, max) {
+        font-size: 20px;
+    }
 }
 
-.right{
+.right {
     display: flex;
     flex-direction: column;
     gap: 44px;
+
+    @include mq($PhoneWidth, max) {
+        align-self: center;
+    }
 }
 
 .top {
     display: flex;
     gap: 180px;
+
+    @include mq($TabletWidth, max) {
+        flex-direction: column;
+        gap: 45px;
+    }
 }
 
-.bottom{
+.bottom {
     display: flex;
     justify-content: center;
 }

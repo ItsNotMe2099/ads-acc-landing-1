@@ -4,12 +4,25 @@
     @include container;
     display: flex;
     flex-direction: column;
-    padding-bottom: 147px;
+    padding-bottom: 147px !important;
     gap: 141px;
     position: relative;
 
+    @include mq($TabletWidth, max) {
+        padding-bottom: 0 !important;
+        .sphereBottomRight,
+        .sphereBottomLeft {
+            display: none;
+        }
+    }
+
     @include mq($PhoneWidth, max) {
         gap: 47px;
+
+        .sphereTopRight,
+        .sphereTopLeft {
+            display: none;
+        }
     }
 
     .sphereMobile {
