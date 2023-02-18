@@ -1,0 +1,55 @@
+@import "styles/index";
+
+.root {
+    padding-top: 43px;
+    padding-bottom: 60px;
+    padding-right: 61px;
+    padding-left: 48px;
+    background: rgba(217, 217, 217, 0.04);
+    display: flex;
+    gap: 10%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 165.52%;
+    font-family: 'Montserrat';
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 43px;
+}
+
+.img {
+    background: linear-gradient(212.12deg, #7BBECD -6.43%, #6FD2E8 39.57%, #9867DE 96.46%);
+    width: 392px;
+    height: 392px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        position: relative !important;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1;
+    padding-bottom: 20px;
+
+    button {
+        width: 40%;
+    }
+}

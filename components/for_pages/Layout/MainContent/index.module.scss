@@ -1,0 +1,50 @@
+@import "styles/index";
+
+.root {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+
+    @include mq($MdDesktopWidth, max) {
+        gap: 5%;
+    }
+}
+
+.mobile{
+    flex-direction: column;
+    .list{
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+        align-items: baseline;
+    }
+    .btn{
+        margin-top: 50px;
+        width: 50%;
+    }
+}
+
+.label {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 165.52%;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.item {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+}
+
+.btn {
+    width: 14%;
+}

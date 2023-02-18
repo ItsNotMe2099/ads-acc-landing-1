@@ -1,0 +1,19 @@
+@import "styles/index";
+
+.root {}
+
+.header {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 41px;
+    padding-bottom: 34px;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: uppercase;
+    text-align: center
+}
+
+.content{
+    @include container;
+}

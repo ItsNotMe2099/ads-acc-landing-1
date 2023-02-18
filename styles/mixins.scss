@@ -1,0 +1,21 @@
+@import "variables";
+
+@mixin mq($width, $type: min) {
+  @if $type == max {
+  	$width: $width - 1px;
+  }
+  @media only screen and (#{$type}-width: $width) {
+    @content;
+  }
+}
+
+@mixin container {
+  width: 75%;
+  margin: 0 auto;
+
+  @include mq($SmDesktopWidth, max){
+    width: 100%;
+    margin: 0;
+    padding: 0 23px;
+  }
+}

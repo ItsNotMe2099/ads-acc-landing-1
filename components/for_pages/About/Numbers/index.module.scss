@@ -1,0 +1,20 @@
+@import "styles/index";
+
+.root {}
+
+.number {
+    background: radial-gradient(130.9% 464.88% at -7.34% -16.32%, #8F69DC 0%, #2D7AB6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 97px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    white-space: nowrap;
+}

@@ -1,0 +1,16 @@
+@import "styles/index";
+
+.root {
+    padding-top: 71px;
+    padding-bottom: 125px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.bottom{
+    margin-top: 22px;
+}

@@ -1,0 +1,121 @@
+@import "styles/index";
+
+.root {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 147px;
+    gap: 141px;
+    position: relative;
+
+    @include mq($PhoneWidth, max) {
+        gap: 47px;
+    }
+
+    .sphereMobile {
+        @include mq($PhoneWidth, min) {
+            display: none;
+        }
+
+        @include mq($PhoneWidth, max) {
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 25%;
+        }
+
+    }
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(93.41deg, #7BBECD 1.83%, #8F69DC 104.99%);
+    padding-top: 38px;
+    align-items: center;
+    height: 322px;
+    position: relative;
+
+    @include mq($TabletWidth, max) {
+        height: 222px;
+    }
+
+    @include mq($PhoneWidth, max) {
+        background: transparent;
+        padding: 0;
+        height: 100%;
+    }
+}
+
+.sphereTopLeft {
+    position: absolute;
+    left: -3%;
+    bottom: 0;
+}
+
+.sphereTopRight {
+    position: absolute;
+    right: 0;
+    bottom: 25%;
+}
+
+.sphereBottomRight {
+    position: absolute;
+    right: -110%;
+}
+
+.sphereBottomLeft {
+    position: absolute;
+    left: -75%;
+}
+
+.bottom {
+    display: flex;
+    gap: 20px;
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+
+    @include mq($TabletWidth, max) {
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        padding-bottom: 78px;
+    }
+}
+
+.img {
+    img {
+        position: relative !important;
+        width: inherit !important;
+    }
+
+    @include mq($PhoneWidth, max) {
+        display: none;
+    }
+}
+
+.text {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    position: absolute;
+    bottom: -50px;
+
+    @include mq($DesktopWidth, max) {
+        font-size: 44px;
+    }
+
+    @include mq($TabletWidth, max) {
+        font-size: 34px;
+        line-height: 50px;
+    }
+
+    @include mq($PhoneWidth, max) {
+        text-align: left;
+        position: static;
+    }
+}
