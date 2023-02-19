@@ -1,7 +1,8 @@
 
 export const CONTACTS = {
   instagram: '#',
-  telegram: '#'
+  telegram: '#',
+  email: 'HELLO@OFFICIAL.COM'
 }
 
 export const LINKS = {

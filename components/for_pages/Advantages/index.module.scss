@@ -3,14 +3,23 @@
 .root {
     padding-top: 71px;
     padding-bottom: 125px;
+
+    @include mq($PhoneWidth, max) {
+        padding-top: 46px;
+        padding-bottom: 57px;
+    }
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     gap: 29px;
+
+    @include mq($TabletWidth, max) {
+        gap: 25px;
+    }
 }
 
-.bottom{
+.bottom {
     margin-top: 22px;
 }

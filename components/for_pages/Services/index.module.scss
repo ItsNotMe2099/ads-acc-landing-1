@@ -3,6 +3,11 @@
 .root {
     padding-top: 68px;
     padding-bottom: 122px;
+
+    @include mq($TabletWidth, max) {
+        padding-top: 25px;
+        padding-bottom: 36px;
+    }
 }
 
 .title {
@@ -11,10 +16,20 @@
     line-height: 165.52%;
     font-family: 'Montserrat';
     text-align: center;
+
+    @include mq($PhoneWidth, max) {
+        text-align: left;
+        font-size: 20px;
+    }
 }
 
-.content{
+.content {
     margin-top: 76px;
     display: flex;
     gap: 21px;
+
+    @include mq($TabletWidth, max) {
+        flex-direction: column;
+        margin-top: 45px;
+    }
 }

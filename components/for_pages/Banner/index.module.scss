@@ -10,6 +10,7 @@
 
     @include mq($TabletWidth, max) {
         padding-bottom: 0 !important;
+
         .sphereBottomRight,
         .sphereBottomLeft {
             display: none;
@@ -75,6 +76,10 @@
 .sphereBottomRight {
     position: absolute;
     right: -110%;
+
+    @include mq($SmDesktopWidth, max) {
+        right: -71%;
+    }
 }
 
 .sphereBottomLeft {

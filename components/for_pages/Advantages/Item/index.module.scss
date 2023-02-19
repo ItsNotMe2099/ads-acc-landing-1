@@ -8,11 +8,26 @@
     background: rgba(217, 217, 217, 0.04);
     display: flex;
     gap: 10%;
+
+    @include mq($MdDesktopWidth, max) {
+        padding-top: 19px;
+        padding-bottom: 38px;
+        padding-left: 17px;
+        padding-right: 21px;
+    }
+
+    @include mq($TabletWidth, max) {
+        flex-direction: column-reverse;
+    }
 }
 
 .left {
     display: flex;
     flex-direction: column;
+
+    @include mq($TabletWidth, max) {
+        margin-top: 24px;
+    }
 }
 
 .title {
@@ -20,6 +35,10 @@
     font-size: 32px;
     line-height: 165.52%;
     font-family: 'Montserrat';
+
+    @include mq($PhoneWidth, max) {
+        font-size: 20px;
+    }
 }
 
 .text {
@@ -27,6 +46,21 @@
     font-size: 16px;
     line-height: 19px;
     margin-top: 43px;
+
+    @include mq($TabletWidth, max) {
+        margin-top: 28px;
+    }
+
+    @include mq($PhoneWidth, max) {
+        font-size: 12px;
+    }
+}
+
+.right {
+    @include mq($MdDesktopWidth, max) {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .img {
@@ -37,19 +71,33 @@
     justify-content: center;
     align-items: center;
 
+    @include mq($MdDesktopWidth, max) {
+        width: 285px;
+        height: 285px;
+    }
+
+    @include mq($MPhoneWidth, max) {
+        width: 240px;
+        height: 240px;
+    }
+
     img {
         position: relative !important;
     }
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    flex: 1;
-    padding-bottom: 20px;
+    margin-top: 71px;
 
     button {
         width: 40%;
+
+        @include mq($DesktopWidth, max) {
+            width: 100%;
+        }
+    }
+
+    @include mq($TabletWidth, max) {
+        margin-top: 38px;
     }
 }

@@ -30,6 +30,10 @@
   &.fluid {
     width: 100%;
   }
+
+  @include mq($PhoneWidth, max) {
+    font-size: 14px;
+}
 }
 
 .disabled {

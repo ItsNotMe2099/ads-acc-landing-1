@@ -5,6 +5,12 @@
 .content {
     display: flex;
     gap: 38px;
+    padding-bottom: 46px;
+
+    @include mq($SmDesktopWidth, max) {
+        padding-top: 41px;
+        padding-bottom: 129px;
+    }
 }
 
 .left {
@@ -13,11 +19,19 @@
     display: flex;
     flex-direction: column;
     gap: 27px;
+
+    @include mq($SmDesktopWidth, max) {
+        margin-top: 0;
+    }
 }
 
 .right {
     img {
         position: relative !important;
         height: inherit !important;
+    }
+
+    @include mq($SmDesktopWidth, max) {
+        display: none;
     }
 }

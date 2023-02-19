@@ -19,7 +19,7 @@ export default function MainContent({ isMobileMenu }: Props) {
   ]
 
   return (
-    <div className={classNames(styles.root, {[styles.mobile]: isMobileMenu})}>
+    <div className={classNames(styles.root, { [styles.mobile]: isMobileMenu })}>
       {!isMobileMenu ? <div className={styles.label}>
         CAB Agency
       </div> : null}
@@ -30,7 +30,7 @@ export default function MainContent({ isMobileMenu }: Props) {
           </Link>
         )}
       </div>
-      <Button className={styles.btn}>
+      <Button className={classNames(styles.btn, { [styles.none]: !isMobileMenu })}>
         Написать
       </Button>
     </div>

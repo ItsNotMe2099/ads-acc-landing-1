@@ -11,9 +11,15 @@
     font-size: 32px;
     line-height: 39px;
     text-transform: uppercase;
-    text-align: center
+    text-align: center;
+
+    @include mq($PhoneWidth, max) {
+        font-size: 20px;
+        padding: 25px 0;
+        line-height: 24px;
+    }
 }
 
-.content{
+.content {
     @include container;
 }

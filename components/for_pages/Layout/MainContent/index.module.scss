@@ -11,15 +11,17 @@
     }
 }
 
-.mobile{
+.mobile {
     flex-direction: column;
-    .list{
+
+    .list {
         flex-direction: column;
         gap: 50px;
         width: 100%;
         align-items: baseline;
     }
-    .btn{
+
+    .btn {
         margin-top: 50px;
         width: 50%;
     }
@@ -29,6 +31,10 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 165.52%;
+
+    @include mq($TabletWidth, max) {
+        display: none;
+    }
 }
 
 .list {
@@ -36,6 +42,11 @@
     align-items: center;
     justify-content: space-between;
     flex: 1;
+
+    @include mq($PhoneWidth, max) {
+        flex-direction: column;
+        gap: 32px;
+    }
 }
 
 .item {
@@ -47,4 +58,10 @@
 
 .btn {
     width: 14%;
+}
+
+.none {
+    @include mq($TabletWidth, max) {
+        display: none;
+    }
 }
