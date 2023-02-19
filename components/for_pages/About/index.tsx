@@ -10,7 +10,7 @@ interface Props {
 export default function About({ }: Props) {
 
   return (
-    <ContentComponent title='О нас' className={styles.root}>
+    <ContentComponent title='О нас' className={styles.root} id='about'>
       <div className={styles.left}>
         <Image className={styles.hand} src='/img/About/hand.png' alt='' fill />
         <div className={styles.text}>

@@ -6,9 +6,9 @@ export const CONTACTS = {
 }
 
 export const LINKS = {
-  about: '#',
-  services: '#',
-  advantages: '#',
-  blog: '#',
-  faq: '#'
+  about: '/#about',
+  services: '/#services',
+  advantages: '/#advantages',
+  blog: '/#blog',
+  faq: '/#faq'
 }

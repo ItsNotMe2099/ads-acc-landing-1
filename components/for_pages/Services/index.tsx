@@ -9,7 +9,7 @@ interface Props {
 export default function Services({ }: Props) {
 
   return (
-    <ContentComponent title='Услуги' className={styles.root}>
+    <ContentComponent title='Услуги' className={styles.root} id='services'>
       <div className={styles.title}>
         Устали искать агентские аккаунты TikTok без НДС?
       </div>

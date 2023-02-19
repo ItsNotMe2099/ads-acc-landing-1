@@ -5,12 +5,13 @@ interface Props {
   children: React.ReactNode
   title: string
   className?: string
+  id: string
 }
 
-export default function ContentComponent({ children, title, className }: Props) {
+export default function ContentComponent({ children, title, className, id }: Props) {
 
   return (
-    <div className={styles.root}>
+    <div className={styles.root} id={id}>
       <div className={styles.header}>
         {title}
       </div>

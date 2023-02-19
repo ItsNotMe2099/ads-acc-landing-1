@@ -9,7 +9,7 @@ interface Props {
 export default function Advantages({ }: Props) {
 
   return (
-    <ContentComponent title='Преимущества' className={styles.root}>
+    <ContentComponent title='Преимущества' className={styles.root} id='advantages'>
       <div className={styles.content}>
         <Item title='Премодерация' text=
           {() => <>

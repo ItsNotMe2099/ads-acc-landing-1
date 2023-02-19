@@ -17,7 +17,7 @@ export default function FAQ({ }: Props) {
   ]
 
   return (
-    <ContentComponent title='F.A.Q.' className={styles.root}>
+    <ContentComponent title='F.A.Q.' className={styles.root} id='faq'>
       <div className={styles.content}>
         <div className={styles.left}>
           {items.map((item, index) =>
