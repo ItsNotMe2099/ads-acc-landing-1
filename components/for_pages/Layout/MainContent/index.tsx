@@ -11,10 +11,10 @@ interface Props {
 export default function MainContent({ isMobileMenu }: Props) {
 
   const items = [
-    { label: 'О нас', link: LINKS.about },
-    { label: 'Услуги', link: LINKS.services },
-    { label: 'Приемущество', link: LINKS.advantages },
-    { label: 'Блог', link: LINKS.blog },
+    { label: 'About Us', link: LINKS.about },
+    { label: 'Services', link: LINKS.services },
+    { label: 'Advantages', link: LINKS.advantages },
+    { label: 'Blog', link: LINKS.blog },
     { label: 'FAQ', link: LINKS.faq },
   ]
 
@@ -31,7 +31,7 @@ export default function MainContent({ isMobileMenu }: Props) {
         )}
       </div>
       <Button className={classNames(styles.btn, { [styles.none]: !isMobileMenu })}>
-        Написать
+        Write
       </Button>
     </div>
   )

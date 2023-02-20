@@ -9,19 +9,19 @@ interface Props {
 export default function Services({ }: Props) {
 
   return (
-    <ContentComponent title='Услуги' className={styles.root} id='services'>
+    <ContentComponent title='Services' className={styles.root} id='services'>
       <div className={styles.title}>
-        Устали искать агентские аккаунты TikTok без НДС?
+        Tired of looking for TikTok agent accounts without VAT?
       </div>
       <div className={styles.content}>
-        <Item title='US seller' text={() => <>Наша компания зарегистрирована в США, для резидентов Америки площадка TikTok не установила комиссию на пополнение Бизнес центра, то есть у нас нет НДС на пополнение кабинетов. Это значительно снижает наши затраты и дает нам возможность ставить низкую комиссию клиентам.</>} />
-        <Item title='Комиссия'
+        <Item title='US seller' text={() => <>Our company is registered in the USA, for residents of America, the TikTok site has not set a commission for replenishing the Business Center, that is, we do not have VAT on replenishing cabinets. This significantly reduces our costs and enables us to charge low commissions to our clients.</>} />
+        <Item title='Commission'
           text=
           {() =>
-            <div>Белые вертикали:от 0 до 2000 дейли - 10%<br />
-              от 2000 до 5000 дейли - 6%<br />
-              от 5000 и выше - 5%<br />
-              Серые вертикали : 15% после пре-модерации.</div>
+            <div>White verticals: from 0 to 2000 daily - 10%<br />
+              from 2000 to 5000 daily - 6%<br />
+              from 5000 and above - 5%<br />
+              Gray verticals: 15% after pre-moderation.</div>
           } />
       </div>
     </ContentComponent>

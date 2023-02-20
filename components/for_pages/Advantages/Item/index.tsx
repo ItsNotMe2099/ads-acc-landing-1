@@ -21,7 +21,7 @@ export default function Item({ title, text, image }: Props) {
           {text()}
         </div>
         <div className={styles.wrapper}>
-          <Button style='blue'>Начнем</Button>
+          <Button style='blue'>Let&apos;s start</Button>
         </div>
       </div>
       <div className={styles.right}>

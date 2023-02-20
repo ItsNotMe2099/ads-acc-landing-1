@@ -23,3 +23,15 @@
 .bottom {
     margin-top: 22px;
 }
+
+.steps{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

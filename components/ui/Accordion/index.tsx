@@ -5,7 +5,7 @@ import PlusSvg from '@/components/svg/PlusSvg'
 
 interface Props {
   title: string
-  content: any
+  content: string | React.ReactNode
 }
 
 export default function Accordion(props: Props) {
