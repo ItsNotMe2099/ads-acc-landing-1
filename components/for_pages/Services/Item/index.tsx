@@ -20,7 +20,7 @@ export default function Item({ title, text }: Props) {
         {text()}
       </div>
       <div className={styles.wrapper}>
-        <Button style='blue'>Подробнее</Button>
+        <Button style='blue'>More</Button>
       </div>
     </div>
   )
