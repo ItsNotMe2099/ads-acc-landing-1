@@ -1,0 +1,2 @@
+[web]
+dev ansible_host=188.214.128.176 ansible_user=root ansible_password=1wnTsY2J1OiYvJSpVLfNz6ys2GVdai9a ansible_become=yes
