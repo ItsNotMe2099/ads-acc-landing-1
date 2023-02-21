@@ -3,7 +3,7 @@ html {
   width: 100%;
   max-width: 100%;
   font-family: "Inter", sans-serif;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   display: flex;
   flex-direction: column;
 }

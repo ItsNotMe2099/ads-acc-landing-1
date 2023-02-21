@@ -23,9 +23,9 @@ export default function Footer({ }: Props) {
         <MainContent />
         <div className={styles.bottom}>
           <div className={styles.socials}>
-            <Link className={styles.inst} href={CONTACTS.instagram}>
+            {/*<Link className={styles.inst} href={CONTACTS.instagram}>
               <InstSvg />
-            </Link>
+  </Link>*/}
             <Link href={CONTACTS.telegram}>
               <TgSvg />
             </Link>

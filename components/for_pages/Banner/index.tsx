@@ -28,7 +28,7 @@ export default function Banner({ }: Props) {
         <BannerSphereLgSvg className={styles.sphereBottomRight} />
         <BannerSphereSmSvg className={styles.sphereBottomLeft} />
         <Button style='blue'>Let&apos;s start</Button>
-        <Button>To learn more</Button>
+        <Button href='/#services'>To learn more</Button>
       </div>
     </div>
   )
