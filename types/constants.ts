@@ -1,7 +1,7 @@
 
 export const CONTACTS = {
   instagram: '#',
-  telegram: 'https://t.me/cba_agency_mg',
+  telegram: 'https://t.me/cab_agency_mg',
   email: 'HELLO@OFFICIAL.COM'
 }
 
