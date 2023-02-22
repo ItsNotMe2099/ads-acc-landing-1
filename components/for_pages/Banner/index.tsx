@@ -4,6 +4,7 @@ import Button from '@/components/ui/Button'
 import Image from 'next/image'
 import styles from './index.module.scss'
 import BannerSphereSmSvg from '@/components/svg/BannerSphereSmSvg'
+import { CONTACTS } from '@/types/constants'
 
 interface Props {
 
@@ -27,7 +28,7 @@ export default function Banner({ }: Props) {
       <div className={styles.bottom}>
         <BannerSphereLgSvg className={styles.sphereBottomRight} />
         <BannerSphereSmSvg className={styles.sphereBottomLeft} />
-        <Button style='blue'>Let&apos;s start</Button>
+        <Button style='blue' href={CONTACTS.telegram}>Let&apos;s start</Button>
         <Button href='/#services'>To learn more</Button>
       </div>
     </div>

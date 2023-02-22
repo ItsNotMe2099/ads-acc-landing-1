@@ -1,4 +1,5 @@
 import Button from '@/components/ui/Button'
+import { CONTACTS } from '@/types/constants'
 import Image from 'next/image'
 import { ReactElement } from 'react'
 import styles from './index.module.scss'
@@ -21,7 +22,7 @@ export default function Item({ title, text, image }: Props) {
           {text()}
         </div>
         <div className={styles.wrapper}>
-          <Button style='blue'>Let&apos;s start</Button>
+          <Button style='blue' href={CONTACTS.telegram}>Let&apos;s start</Button>
         </div>
       </div>
       <div className={styles.right}>

@@ -1,5 +1,5 @@
 import Button from '@/components/ui/Button'
-import { LINKS } from '@/types/constants'
+import { CONTACTS, LINKS } from '@/types/constants'
 import Link from 'next/link'
 import styles from './index.module.scss'
 import classNames from 'classnames'
@@ -30,7 +30,7 @@ export default function MainContent({ isMobileMenu }: Props) {
           </Link>
         )}
       </div>
-      <Button className={classNames(styles.btn, { [styles.none]: !isMobileMenu })}>
+      <Button href={CONTACTS.telegram} className={classNames(styles.btn, { [styles.none]: !isMobileMenu })}>
         Write
       </Button>
     </div>
